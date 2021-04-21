@@ -1,1 +1,17 @@
-POST http://localhost:4000/app/signup
+GET https://example.com/comments/1 HTTP/1.1
+
+###
+
+GET https://example.com/topics/1 HTTP/1.1
+
+###
+
+POST http://localhost:4000/app/signup HTTP/1.1
+content-type: application/json
+
+{
+    "fullName":"Ashitha",
+    "userName":"Ashi",
+    "email":"ashitha@gmail.com",
+    "password":"ashithaashi"
+}

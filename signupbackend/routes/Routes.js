@@ -6,7 +6,7 @@ router.post('/signup',(request,response)=>{
     
     const signupuser=new signuptempcopy({
         fullName:request.body.fullName,
-        username:request.body.username,
+        userName:request.body.userName,
         email:request.body.email,
         password:request.body.password
     })
@@ -15,7 +15,6 @@ router.post('/signup',(request,response)=>{
         response.json(data);
     })
     .catch(error=>{
-        console.log(error)
         response.json(error)
     })
 
